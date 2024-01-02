@@ -1,0 +1,22 @@
+// CRUD
+
+Create => 
+
+1. create => To create Single record (Single User or Post) => ({ data: { ...record } })
+2. createMany => To create Multiple records => ({ data: [{ ...record }], skipDuplicates: Boolean })
+
+Read =>
+
+3. findUnique => To find the single record => ({ where: (condition) })
+4. findMany => To find all records => ({ where: (condition) })
+
+Update =>
+
+5. update => To find a specific record and update that => ({ where: (condition), data: { ...record } })
+6. updateMany => To update Multiple records => ({ where: (condition), data: { ...record } })
+7. upsert => If record exists then update that else create a new record => ({ where: (condition), update: { ...record }, create: { ...record } })
+
+Delete =>
+
+8. delete => To delete a single record => ({ where: (condition) })
+9. deleteMany => To delete Multiple records => ({ where: (condition) })
